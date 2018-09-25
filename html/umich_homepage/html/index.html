@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<charset="UTF-8">
+		<title> Jeepee's Homepage </title>
+		<link rel="stylesheet" href="index.css">
+</head>
+
+<!-- Import Javascript -->
+<script language="javascript" src="index.js"> </script>
+<!--
+<script type="javascript">
+document.addEventListener( "plusready", onPlusReady, false );
+function onPlusReady() {
+	plus.io.requestFileSystem( plus.io.PRIVATE_WWW,
+		function( fs ) {
+			alert( "Request file system success!" );
+		}, function ( e ) {
+			alert( "Request file system failed: " + e.message );
+		} );
+}
+</script>
+-->
+
+
+<body>
+	<h1> Jeepee's Home page </h1>
+	<p id="rcorner">
+		<b>Welcome!</b> <br /> An ECE grad student in UMich, Ann Arbor.
+		Not good at HTML at all. This website exhausted me :)
+	</p>
+	<p id="rcorner">
+		<b>Contact me</b> <br />
+		<button type="button" onclick="showEmailAddrAlert()">
+			See my email!
+		</button>
+		<a id="show-email-address">--hidden--</a>
+	</p>
+
+	<p>It's sad that our hosting service does not allow the use of
+		<b>PHP</b> for free... SO SAD!
+	</p>
+
+
+	<p>
+		<h3>Contents</h3>
+
+		<!-- Table of contents -->
+		<ul>
+			<li><a href="curriculum.html"> My Curriculum </a></li>
+			<li><a href="subpage.html"> Another Subpage </a></li>
+		</ul>
+	</p>
+
+	<!-- FORM TEST  -->
+	<p>
+	Click
+	<a href="https://docs.google.com/forms/d/e/1FAIpQLSc8kXPCyP8_xK2swj-Wo7XfXC2gAmmjsK9oLNa-JuQBNtRNnw/viewform?usp=sf_link">
+		<b>HERE</b>
+	</a>
+	to leave me a message or ask me any question!
+	</p>
+    <!--
+	<form action="record.asp" method="post">
+		<fieldset>
+			<legend> Leaving messages </legend>
+			<p> First name: <input type="text" name="firstname" value="Alice" /> </p>
+			<p> Last name: <input type="text" name="lastname" value="Bob" /> </p>
+			<p> Email: <input type="email" name="email" autocomplete="off"> </p>
+			<p> Please leave some messages to me! <br />
+			<textarea name="c" cols="20" rows="5"> :) </textarea> </p>
+			<input type="submit" value="Submit"
+				onclick="alert("Sorry I dont know how to do this... :("/>
+		</fieldset>
+	</form>
+	<button type="button" onclick="submitForm()">
+		Try to submit here!
+	</button>
+	-->
+
+	<p><img src="pics/saenai.jpg" alt="Saenai" style="width:500px"></p>
+
+</body>
+
+</html>

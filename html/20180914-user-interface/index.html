@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript">
+            let count = 0;
+            function calculate() {
+                //// Demo Output
+                // display.text = "Demo Output #" + count;
+                display.text = surfactant.value;
+                // parseFloat( temp.value )
+                // + parseFloat( rpm.value )
+                // + parseFloat( conc.value );
+
+                count += 1;
+                console.log("calculate() called for: " + count + " times.")
+            }
+        </script>
+
+        <title>MDP BASF</title>
+        <h1>
+            <img src="basf_icon.jpg" height="90" align="top"> Dirt Removal Calculator
+        </h1>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>
+                    <a class="result" style="fontsize=20pt;"> Removal rate (%/sec): </a>
+                </th>
+                <th>
+                    <div style="width:268px;height:34px;">
+                        <a class="result" id="display" name="display" style="fontsize=20pt;"> </a>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Surfactant:
+                </td>
+                <td>
+                    <div class="styled-select slate semi-square">
+                        <select id="surfactant">
+                            <option value="LutensolAT25">Lutensol AT 25</option>
+                            <option value="LutensolAT50">Lutensol AT 50</option>
+                            <option value="LutensolA12N">Lutensol A 12 N</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tempurature (Celsius):
+                </td>
+                <td>
+                    <input id="temp" type="number" value="25.0" step=any>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    rpm:
+                </td>
+                <td>
+                    <input id="rpm" type="number" value="0.0" step=any>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    concentration (w/w%):
+                </td>
+                <td>
+                    <input id="conc" type="number" value="1.0" step=any>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="calculate()"> calculate </button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

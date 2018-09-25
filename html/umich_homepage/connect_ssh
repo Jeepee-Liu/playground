@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh zhipingl@oncampus-course.engin.umich.edu

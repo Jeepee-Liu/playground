@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<charset="UTF-8">
+<title> Jeepee's Homepage </title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<script>
+function showEmailAddr() {
+	words = document.getElementById("show-email-address");
+	words.innerHTML = "zhipingl[AT]umich.edu";
+}
+</script>
+
+<body>
+<h1> Jeepee's Home page </h1>
+<p id="rcorner">
+<b>Welcome!</b> <br />
+An ECE grad student in UMich, Ann Arbor.
+Not good at HTML at all. This website exhausted me :)
+</p>
+<p id="rcorner">
+<b>Contact me</b> <br />
+<button type="button" onclick="showEmailAddr()">
+	See my email!
+</button>
+<a id="show-email-address">--hidden--</a>
+</p>
+
+<p>It's sad that our hosting service does not allow the
+use of <b>PHP</b> for free... SO SAD!</p>
+
+
+<p>
+<h3>Contents</h3>
+
+<!-- Table of contents -->
+<ul>
+<li><a href="curriculum.html"> My Curriculum </a></li>
+<li><a href="subpage.html"> Another Subpage </a></li>
+</ul>
+
+</p>
+
+<form action="record.asp" method="post">
+<fieldset>
+<legend>Personal information:</legend>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br>
+Please leave some message to me!
+<textarea name="comments" cols="20" rows="5">
+<br> <br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+
+<img src="pics/saenai.jpg" alt="Saenai" style="width:500px">
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    dirname=$(date "+%Y%m%d")
+else
+    dirname=$(date "+%Y%m%d-$1")
+fi
+
+mkdir $dirname
+echo "Directory $dirname created!"
+
+exit 1
+
